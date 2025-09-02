@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create   # create, create-drop, update 등 필요에 맞게 선택
+    show-sql: true        # 실행되는 SQL 출력
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
